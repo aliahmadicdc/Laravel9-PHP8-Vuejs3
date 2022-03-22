@@ -1,0 +1,10 @@
+{
+    "/assets/app/js/multi/auth/login.js": "/assets/app/js/multi/auth/login.js",
+    "/assets/app/js/multi/auth/register.js": "/assets/app/js/multi/auth/register.js",
+    "/assets/app/js/multi/auth/verify.js": "/assets/app/js/multi/auth/verify.js",
+    "/assets/app/js/multi/auth/forgetPassword.js": "/assets/app/js/multi/auth/forgetPassword.js",
+    "/assets/app/js/multi/auth/passwordReset.js": "/assets/app/js/multi/auth/passwordReset.js",
+    "/assets/app/js/multi/front/home.js": "/assets/app/js/multi/front/home.js",
+    "/assets/app/js/spa/app.js": "/assets/app/js/spa/app.js",
+    "/assets/app/css/app.css": "/assets/app/css/app.css"
+}

@@ -1,0 +1,111 @@
+export const locale = {
+    TRANSLATOR: {
+        SELECT: "زبان خود را انتخاب کنید..."
+    },
+    PAGES: {
+        ROUTES: {
+            dashboard: "داشبورد",
+            profile_personalInformation: "اطلاعات شخصی",
+            profile_accountInformation: "اطلاعات حساب",
+            profile_changePassword: "تغییر کلمه عبور",
+            profile_settings: "تنظیمات حساب",
+            panel_index: "داشبورد",
+            panel: "داشبورد",
+            notifications: "اعلان های کاربر",
+            NotFound: "صفحه پیدا نشد!"
+        },
+        FRONT: {
+            HOME: "صفحه خانه",
+            HOSTING: "هاستینگ",
+            ABOUT: "درباره ما",
+            CONTACT: "تماس با ما",
+            RULES: "قوانین و مقررات",
+            BLOG: "وبلاگ",
+            TOOLS: "امکانات",
+        },
+        BACK: {
+            USER_AREA: "ناحیه کاربری",
+            PANEL: "پنل کاربری",
+            DASHBOARD: "داشبورد",
+            PROFILE: "پروفایل من",
+            PROFILE_SETTINGS: "تنظیمات حساب",
+            TOOLS: "امکانات",
+            ACCOUNT: "حساب کاربری",
+            RULES: "قوانین و مقررات",
+            CONTACT_US: "تماس با ما",
+            ABOUT_US: "درباره ما",
+            HELLO: "سلام",
+            CITY_DEVELOPERS: "توسعه دهندگان شهر",
+            SEE_ALL: "مشاهده همه",
+            NOTIFICATIONS: "اعلان ها کاربر",
+            NEW: "جدید",
+        }
+    },
+    AUTH: {
+        LOGOUT: {
+            TITLE: "خروج از حساب",
+            TEXT: "اگر شماره {phone} متعلق به شما نیست از حساب کاربری خود خارج شوید.",
+        },
+        LOGIN: {
+            TITLE: "ورود",
+            TEXT: "برای ورود به وبسایت شماره موبایل و رمز عبور خود را وارد کنید.",
+            BUTTON: "ورود",
+            EMAIL: "ایمیل",
+            EMAIL_HOLDER: "a@example.com",
+            PASSWORD: "رمز عبور",
+            PASSWORD_HOLDER: "ترکیب حروف و اعداد",
+            PHONE_NUMBER: "شماره موبایل",
+            PHONE_NUMBER_HOLDER: "09xxxxxxxxx",
+        },
+        FORGOT: {
+            TITLE: "فراموشی رمز عبور",
+            BUTTON: "بازیابی",
+            TEXT: "برای بازیابی رمز عبور خود شماره موبایل خود را در کادر زیر وارد نمایید.",
+            SUCCESS: "لینک بازیابی رمز عبور با موفقیت به شماره موبایل شما ارسال شد.",
+            TOO_REQUEST: "لطفا چند دقیقه دیگر تلاش کنید.",
+        },
+        PASSWORD: {
+            TITLE: "تعیین رمز عبور جدید",
+            NEW_PASSWORD: "رمز عبور جدید",
+            NEW_PASSWORD_CONFIRMATION: "تکرار رمز عبور جدید",
+            BUTTON: "ذخیره",
+            TEXT: "رمز عبور جدید خود را در کادر زیر وارد کنید.",
+            SUCCESS: "رمز عبور جدید با موفقیت ذخیره شد.",
+        },
+        REGISTER: {
+            TITLE: "ثبت نام",
+            BUTTON: "ثبت نام",
+            TEXT: "برای ثبت نام در وبسایت اطلاعات زیر را تکمیل نمایید.",
+            RULES: "قوانین و مقررات",
+            ACCEPT: "پذیرفتن ",
+        },
+        VERIFY: {
+            TITLE: "تایید حساب",
+            TEXT: "برای تایید حساب کاربری خود کد تایید ارسال شده به شماره موبایل {phone} را وارد کنید.",
+            BUTTON: "تایید",
+            CODE_HINT: "کد تایید",
+            RESEND_SUCCESS: "کد تایید مجددا ارسال شد.",
+            CODE_WRONG: "کد تایید ارسال شده اشتباه است.",
+            RESEND: "ارسال مجدد کد فعالسازی",
+        },
+        INPUT: {
+            EMAIL: "ایمیل",
+            NAME: "نام و نام خانوادگی",
+            CODE: "کد تایید",
+            PHONE_NUMBER: "شماره موبایل",
+            PASSWORD: "رمز عبور",
+            CONFIRM_PASSWORD: "تکرار رمز عبور",
+        },
+        VALIDATION: {
+            REQUIRED: "{model} نمی تواند خالی باشد.",
+            TOKEN: "توکن نمی تواند خالی باشد.",
+            CONNECTION_ERROR: "مشکلی در ارتباط با سرور به وجود آمد.",
+            ACCEPT: "شما باید {model} را بپذیرید.",
+            NOT_PHONE_NUMBER: "فرمت شماره موبایل صحیح نیست.",
+            NOT_CODE: "کد تایید باید عدد و {count} رقمی باشد.",
+            MIN_LENGTH_FIELD: "{model} نمی تواند کمتر از {min} خالی باشد.",
+            NOT_SAME: "{model} باید با {other} برابر باشد.",
+            LOADING: "در حال بارگذاری",
+        }
+    }
+};

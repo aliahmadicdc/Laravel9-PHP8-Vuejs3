@@ -1,0 +1,13 @@
+export const SET_IS_LOADING = "setIsLoading"
+export const SET_LANG = "setLang"
+export const SET_MESSAGE = "setMessage"
+export const SET_USER = "setUser"
+export const SET_IS_AUTH = "setIsAuth"
+export const CLEAR_MESSAGES = "clearMessages"
+export const CLEAR_USER = "clearUser"
+
+export const GET_IS_LOADING = "getIsLoading"
+export const GET_LANG = "getLang"
+export const GET_MESSAGES = "getMessages"
+export const GET_USER = "getUser"
+export const GET_IS_AUTH = "getIsAuth"

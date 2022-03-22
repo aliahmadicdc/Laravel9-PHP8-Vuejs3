@@ -1,0 +1,47 @@
+.full-width {
+    width: 100% !important;
+}
+
+.router-link-active {
+    color: black !important;
+}
+
+.router-link-exact-active {
+    color: black !important;
+}
+
+.base-messages {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 10000;
+    max-width: 50%;
+}
+
+.base-loading {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 10000;
+    max-width: 50%;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .base-messages {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    .base-loading {
+        left: 0;
+        bottom: 0;
+        margin: 10px;
+    }
+}
