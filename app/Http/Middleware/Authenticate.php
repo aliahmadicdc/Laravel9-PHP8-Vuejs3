@@ -27,6 +27,7 @@ class Authenticate extends Middleware
     {
         if (in_array('application/json', explode(',', $request->headers->get('accept')))
             && $cookie = Cookie::get('access-token')) {
+
             try {
                 $token = explode("|", Crypt::decrypt($cookie, false))[1];
             } catch (\Exception $exception) {

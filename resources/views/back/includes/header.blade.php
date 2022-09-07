@@ -1,3 +1,3 @@
 @include('back.includes.head')
-<body style="direction: rtl !important;">
-@include('back.includes.navbar')
+<body id="kt_body"
+      class="header-fixed header-mobile-fixed subheader-enabled subheader-fixed aside-enabled aside-fixed aside-minimize-hoverable">

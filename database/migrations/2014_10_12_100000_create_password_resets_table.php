@@ -13,6 +13,7 @@ class CreatePasswordResetsTable extends Migration
             $table->string('phone_number');
             $table->string('token');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

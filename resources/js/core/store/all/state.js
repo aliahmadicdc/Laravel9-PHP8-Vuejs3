@@ -1,5 +1,5 @@
-import i18nService from "../../services/i18n.service"
-import { IS_AUTH } from "../../services/session-types"
+import i18nService from "../../services/lang/i18n.service"
+import {IS_AUTH} from "../../services/data/storage-types"
 
 export const state = {
     isLoading: false,
@@ -7,5 +7,8 @@ export const state = {
     messages: [],
     messageMode: '',
     user: null,
-    isAuth: SessionService.get(IS_AUTH) ?? false,
+    profileImage : null,
+    options: null,
+    isAuth: StorageService.get(IS_AUTH) ?? false,
+    recaptchaResponse: null
 }

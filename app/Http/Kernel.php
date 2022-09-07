@@ -2,11 +2,12 @@
 
 namespace App\Http;
 
-use App\Http\Middleware\api\CheckUserVerify;
-use App\Http\Middleware\api\ForceJsonResponse;
-use App\Http\Middleware\CheckAdminRole;
-use App\Http\Middleware\HttpsProtocol;
-use App\Http\Middleware\PhoneNumberVerify;
+use App\Http\Middleware\Api\General\ForceJsonResponse;
+use App\Http\Middleware\Api\General\HttpsProtocol;
+use App\Http\Middleware\Api\User\CheckAdminRole;
+use App\Http\Middleware\Api\User\CheckUserStatus;
+use App\Http\Middleware\Api\User\CheckUserVerify;
+use App\Http\Middleware\Api\User\PhoneNumberVerify;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -42,7 +43,7 @@ class Kernel extends HttpKernel
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
-            HttpsProtocol::class
+            HttpsProtocol::class,
         ],
 
         'api' => [
@@ -75,5 +76,6 @@ class Kernel extends HttpKernel
         'https' => HttpsProtocol::class,
         'json.response' => ForceJsonResponse::class,
         'auth.api.checkVerify' => CheckUserVerify::class,
+        'auth.api.checkUserStatus' => CheckUserStatus::class,
     ];
 }

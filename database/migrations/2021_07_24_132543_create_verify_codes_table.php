@@ -13,6 +13,7 @@ class CreateVerifyCodesTable extends Migration
             $table->string('code');
             $table->foreignId('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

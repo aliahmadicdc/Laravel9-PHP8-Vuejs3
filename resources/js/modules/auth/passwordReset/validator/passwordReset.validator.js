@@ -2,16 +2,17 @@ import {reactive} from "vue"
 import {helpers, minLength, required} from "@vuelidate/validators"
 import useVuelidate from "@vuelidate/core"
 
-const form = reactive({
-    form: {
-        password: '',
-        passwordConfirmation: ''
-    }
-})
-
 const Validator = {
-    init(t = window.t, lang = window.lang) {
-        return useVuelidate({
+    init() {
+
+        const state = reactive({
+            form: {
+                password: '',
+                passwordConfirmation: ''
+            }
+        })
+
+        const rules={
             form: {
                 password: {
                     required: helpers.withMessage(t('AUTH.VALIDATION.REQUIRED', {model: t('AUTH.PASSWORD.NEW_PASSWORD', {}, {locale: lang})}, {locale: lang}), required),
@@ -43,7 +44,9 @@ const Validator = {
                     ),*/
                 },
             }
-        }, form)
+        }
+
+        return useVuelidate(rules, state)
     }
 }
 

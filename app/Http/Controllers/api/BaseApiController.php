@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\api;
+namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\JsonResponse;
@@ -11,7 +11,7 @@ class BaseApiController extends Controller
     {
         return response()->json([
             'result' => true,
-            'message' => $message != null ? $message : trans('messages.success'),
+            'message' => $message ?? trans('messages.success'),
             'data' => $data,
         ], $statusCode);
     }

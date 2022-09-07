@@ -1,101 +1,224 @@
 export const locale = {
-  TRANSLATOR: {
-    SELECT: "Select your language"
-  },
-  MENU: {
-    NEW: "new",
-    ACTIONS: "Actions",
-    CREATE_POST: "Create New Post",
-    PAGES: "Pages",
-    FEATURES: "Features",
-    APPS: "Apps",
-    DASHBOARD: "Dashboard"
-  },
-  AUTH: {
-    GENERAL: {
-      OR: "Or",
-      SUBMIT_BUTTON: "Submit",
-      NO_ACCOUNT: "Don't have an account?",
-      SIGNUP_BUTTON: "Sign Up",
-      FORGOT_BUTTON: "Forgot Password",
-      BACK_BUTTON: "Back",
-      PRIVACY: "Privacy",
-      LEGAL: "Legal",
-      CONTACT: "Contact"
+    TRANSLATOR: {
+        SELECT: "زبان خود را انتخاب کنید..."
     },
-    LOGIN: {
-      TITLE: "Login Account",
-      BUTTON: "Sign In"
+    PAGES: {
+        ROUTES: {
+            dashboard: "داشبورد",
+            profile_personalInformation: "اطلاعات شخصی",
+            profile_accountInformation: "اطلاعات حساب",
+            profile_changePassword: "تغییر کلمه عبور",
+            profile_settings: "تنظیمات حساب",
+            panel_index: "داشبورد",
+            panel: "داشبورد",
+            notifications: "اعلان های کاربر",
+            NotFound: "صفحه پیدا نشد!"
+        },
+        FRONT: {
+            HOME: "صفحه خانه",
+            HOSTING: "هاستینگ",
+            ABOUT: "درباره ما",
+            CONTACT: "تماس با ما",
+            RULES: "قوانین و مقررات",
+            BLOG: "وبلاگ",
+            TOOLS: "امکانات",
+        },
+        BACK: {
+            USER_AREA: "ناحیه کاربری",
+            PANEL: "پنل کاربری",
+            DASHBOARD: "داشبورد",
+            PROFILE: "پروفایل من",
+            PROFILE_SETTINGS: "تنظیمات حساب",
+            TOOLS: "امکانات",
+            NOT_FOUND: "صفحه ای که به دنبال آن میگردید پیدا نشد.",
+            ACCOUNT: "حساب کاربری",
+            RULES: "قوانین و مقررات",
+            CONTACT_US: "تماس با ما",
+            ABOUT_US: "درباره ما",
+            HELLO: "سلام",
+            CITY_DEVELOPERS: "توسعه دهندگان شهر",
+            SEE_ALL: "مشاهده همه",
+            NOTIFICATIONS: "اعلان ها کاربر",
+            NOTIFICATIONS_DESCRIPTION: "صندوق پیام ها",
+            QUICK_ACCESS: "دسترسی سریع",
+            NEW: "جدید",
+            CHANGE_PASSWORD: "تغییر کلمه عبور",
+            CANCEL: "لغو"
+        },
+        PROFILE: {
+            VALIDATION: {
+                NOT_NAME: "نام فقط می تواند شامل حروف فارسی باشد.",
+                NOT_NAME_LEN: "طول نام نمی تواند از 5 کمتر باشد.",
+                EMAIL: "ایمیل را به طور صحیح وارد کنید.",
+                NOT_USERNAME:"نام کاربری فقط باید شامل حروف انگلیسی و اعداد باشد.",
+                NOT_USERNAME_LEN:"طول نام کاربری نمی تواند از 5 کمتر باشد.",
+                NOT_SETTINGS:"تنظیمات صحیح نیست."
+            },
+            PERSONAL: "اطلاعات فردی",
+            PERSONAL_DESCRIPTION: "اطلاعات فردی خود را ویرایش کنید",
+            INFORMATION: "اطلاعات حساب",
+            VERIFY_EMAIL: "تایید ایمیل",
+            INFORMATION_DESCRIPTION: "اطلاعات حساب خود را بروز کنید",
+            CHANGE_PASSWORD: "تغییر کلمه عبور",
+            CHANGE_PASSWORD_DESCRIPTION: "کلمه عبور خود را تغییر دهید",
+            SETTINGS: "تنظیمات",
+            SETTINGS_DESCRIPTION: "تنظیمات حساب خود را تغییر دهید",
+            NAME_DESCRIPTION: "نام و نام خانوادگی خود را وارد کنید.",
+            CONTACT_INFORMATION: "اطلاعات تماس",
+            SURE_DELETE_IMAGE: "آیا شما مطمئن هستید که می خواهید عکس پروفایلتان را پاک کنید؟",
+            PASSWORD_DESCRIPTION:"برای تغییر رمز عبور خود، رمز عبور قدیمی و همچنین رمز عبور جدید خود را وارد کنید.",
+            OLD_PASSWORD:"رمز عبور قدیمی",
+            NEW_PASSWORD:"رمز عبور جدید",
+            NEW_PASSWORD_CONFIRMATION:"تایید رمز عبور جدید",
+            SMS_NOTIFICATION:"اعلان از طریق پیامک",
+            EMAIL_NOTIFICATION:"اعلان از طریق ایمیل",
+            MESSAGE_NOTIFICATION:"اعلان از طریق پیام سیستمی",
+            TWO_STEP_VERIFICATION:"تایید دو مرحله ای",
+
+        },
+        NOTIFICATIONS: {
+            DESCRIPTION: "مشاهده اعلان های سیستمی"
+        }
     },
-    FORGOT: {
-      TITLE: "Forgot Password?",
-      DESC: "Enter your email to reset your password",
-      SUCCESS: "Your account has been successfully reset."
+    COMPONENTS: {
+        TABLE: {
+            TITLE: "عنوان پیام",
+            CONTENT: "متن پیام",
+            DATE: "تاریخ",
+            SEARCH: "جستجو",
+            SEARCH_DESCRIPTION: "جستجو...",
+            MESSAGE_TITLE: "عنوان پیام",
+            MESSAGE_BODY: "متن پیام",
+            ACTIONS: "عملیات",
+            STATUS: "وضعیت",
+            SEEN: "دیده شده",
+            EMPTY: "اطلاعاتی یافت نشد.",
+        },
+        BUTTON: {
+            SAVE: "ذخیره"
+        },
+        FORM: {
+            NAME: "نام و نام خانوادگی",
+            PHONE_NUMBER: "شماره موبایل",
+            PHONE_NUMBER_DESCRIPTION: "شماره موبایل شما فقط برای شما قابل نمایش است.",
+            EMAIL_VERIFY_DESCRIPTION: "برای تایید ایمیل خود روی تایید ایمیل کلیک کنید.",
+            EMAIL: "ایمیل",
+            EMAIL_DESCRIPTION: "ایمیل شما فقط برای شما قابل نمایش است.",
+            AVATAR: "آواتار",
+            CHANGE_AVATAR: "تغییر آواتار",
+            DELETE_AVATAR: "حذف آواتار",
+            CANCEL_AVATAR: "لغو آواتار",
+            EXE_AVATAR: "پسوندهای مجاز : jpg, jpeg",
+            USER_ID: "آیدی یکتای کاربر",
+            USERNAME: "نام کاربری",
+            LANGUAGE: "زبان",
+            CHOOSE_LANGUAGE: "انتخاب زبان ...",
+            TIMEZONE: "موقعیت مکانی",
+            NOTIFICATION: "اعلان",
+            SMS: "پیامک",
+            SECURITY: "امنیت",
+            NOTIFICATIONS: "روش های اطلاع رسانی",
+            TWO_FACTOR_AUTHENTICATION: "تایید دو مرحله ای",
+            TWO_FACTOR_AUTHENTICATION_DESCRIPTION: "چنانچه می خواهید در هنگام ورود به سیستم از شما تایید پیامکی دریافت شود این گزینه را فعال کنید.",
+            DISABLE_ACCOUNT: "غیر فعالسازی حساب کاربری",
+            DISABLE_ACCOUNT_QUESTION: "اگر حساب کاربری خود را غیر فعال کنید، دیگر قادر به استفاده از پنل خود نخواهید بود و برای فعالسازی مجدد باید با مدیریت تماس بگیرید. آیا مطمئن هستید؟",
+            DISABLE_ACCOUNT_DESCRIPTION: "چنانچه می خواهید حساب خود را غیر فعال کنید، بر روی این دکمه کلیک کنید. توجه داشته باشید بعد از اینکه حساب شما غیر فعال شد، برای فعالسازی مجدد باید با مدیریت وبسایت تماس بگیرید.",
+
+        }
     },
-    REGISTER: {
-      TITLE: "Sign Up",
-      DESC: "Enter your details to create your account",
-      SUCCESS: "Your account has been successfuly registered."
+    AUTH: {
+        AUTH: {
+            ABOUT: "درباره ما",
+            CONTACT: "تماس با ما",
+            COPY_RIGHT: "© 2020 توسعه دهندگان شهر",
+            WELCOME: "وبسایت شما",
+            WELCOME_TITLE: "به وبسایت خوش آمدید!",
+            LOGO_ALT: "لوگوی وبسایت",
+        },
+        LOGOUT: {
+            TITLE: "خروج از حساب",
+            TEXT: "اگر شماره {phone} متعلق به شما نیست از حساب کاربری خود خارج شوید.",
+        },
+        LOGIN: {
+            TITLE: "ورود",
+            TEXT: "برای ورود به وبسایت شماره موبایل و رمز عبور خود را وارد کنید.",
+            BUTTON: "ورود",
+            EMAIL: "ایمیل",
+            EMAIL_HOLDER: "a@example.com",
+            PASSWORD: "رمز عبور",
+            PASSWORD_HOLDER: "ترکیب حروف و اعداد",
+            PHONE_NUMBER: "شماره موبایل",
+            PHONE_NUMBER_HOLDER: "09xxxxxxxxx",
+            DONT_HAVE_ACCOUNT: "حساب کاربری ندارید؟",
+            HAVE_ACCOUNT: "حساب کاربری دارید؟",
+        },
+        FORGOT: {
+            TITLE: "فراموشی رمز عبور",
+            BUTTON: "بازیابی",
+            TEXT: "برای بازیابی رمز عبور خود شماره موبایل خود را در کادر زیر وارد نمایید.",
+            SUCCESS: "لینک بازیابی رمز عبور با موفقیت به شماره موبایل شما ارسال شد.",
+            EXPIRE_TOKEN: "تاریخ اعتبار این لینک به اتمام رسیده است.",
+            TOO_REQUEST: "لطفا چند دقیقه دیگر تلاش کنید.",
+        },
+        PASSWORD: {
+            TITLE: "تعیین رمز عبور جدید",
+            NEW_PASSWORD: "رمز عبور جدید",
+            NEW_PASSWORD_CONFIRMATION: "تکرار رمز عبور جدید",
+            BUTTON: "ذخیره",
+            TEXT: "رمز عبور جدید خود و تکرار آن را در کادر زیر وارد کرده و ذخیره را بزنید.",
+            SUCCESS: "رمز عبور جدید با موفقیت ذخیره شد.",
+        },
+        REGISTER: {
+            TITLE: "ثبت نام",
+            BUTTON: "ثبت نام",
+            TEXT: "برای ثبت نام اطلاعات زیر را تکمیل کرده و دکمه ثبت نام را بزنید.",
+            RULES: "قوانین و مقررات",
+            ACCEPT: "پذیرفتن ",
+        },
+        VERIFY: {
+            TITLE: "تایید حساب",
+            TEXT: "برای تایید حساب کاربری خود کد تایید ارسال شده به شماره موبایل {phone} را وارد کنید.",
+            BUTTON: "تایید",
+            CODE_HINT: "کد تایید",
+            RESEND_SUCCESS: "کد تایید مجددا ارسال شد.",
+            CODE_WRONG: "کد تایید ارسال شده اشتباه است.",
+            TOO_MANY_CODE: "لطفا چند لحظه دیگر تلاش کنید.",
+            RESEND: "ارسال مجدد کد فعالسازی",
+        },
+        TFA: {
+            TITLE: "ورود دو مرحله ای",
+            TEXT: "برای ورود به حساب کاربری خود کد تایید ارسال شده به شماره موبایل {phone} را وارد کنید.",
+            BUTTON: "تایید",
+            CODE_HINT: "کد تایید",
+            RESEND_SUCCESS: "کد تایید مجددا ارسال شد.",
+            CODE_WRONG: "کد تایید ارسال شده اشتباه است.",
+            TOO_MANY_CODE: "لطفا چند لحظه دیگر تلاش کنید.",
+            RESEND: "ارسال مجدد کد فعالسازی",
+            CANCEL:"شماره {phone} را اشتباه وارد کردید؟"
+        },
+        INPUT: {
+            EMAIL: "ایمیل",
+            NAME: "نام و نام خانوادگی",
+            CODE: "کد تایید",
+            PHONE_NUMBER: "شماره موبایل",
+            PASSWORD: "رمز عبور",
+            CONFIRM_PASSWORD: "تکرار رمز عبور",
+        },
+        VALIDATION: {
+            REQUIRED: "{model} نمی تواند خالی باشد.",
+            TOKEN: "توکن نمی تواند خالی باشد.",
+            CONNECTION_ERROR: "مشکلی در ارتباط با سرور به وجود آمد.",
+            ACCEPT: "شما باید {model} را بپذیرید.",
+            NOT_PHONE_NUMBER: "فرمت شماره موبایل صحیح نیست.",
+            NOT_CODE: "کد تایید باید عدد و {count} رقمی باشد.",
+            MIN_LENGTH_FIELD: "{model} نمی تواند کمتر از {min} خالی باشد.",
+            NOT_SAME: "{model} باید با {other} برابر باشد.",
+            LOADING: "در حال بارگذاری",
+        }
     },
-    INPUT: {
-      EMAIL: "Email",
-      FULLNAME: "Fullname",
-      PASSWORD: "Password",
-      CONFIRM_PASSWORD: "Confirm Password",
-      USERNAME: "Username"
-    },
-    VALIDATION: {
-      INVALID: "{{name}} is not valid",
-      REQUIRED: "{{name}} is required",
-      MIN_LENGTH: "{{name}} minimum length is {{min}}",
-      AGREEMENT_REQUIRED: "Accepting terms & conditions are required",
-      NOT_FOUND: "The requested {{name}} is not found",
-      INVALID_LOGIN: "The login detail is incorrect",
-      REQUIRED_FIELD: "Required field",
-      MIN_LENGTH_FIELD: "Minimum field length:",
-      MAX_LENGTH_FIELD: "Maximum field length:",
-      INVALID_FIELD: "Field is not valid"
+    HTTP: {
+        SUCCESS_UPDATE: "با موفقیت آپدیت شد.",
+        SUCCESS_SEND: "با موفقیت ارسال شد.",
+        SUCCESS_VERIFY: "با موفقیت تایید شد.",
     }
-  },
-  ECOMMERCE: {
-    COMMON: {
-      SELECTED_RECORDS_COUNT: "Selected records count: ",
-      ALL: "All",
-      SUSPENDED: "Suspended",
-      ACTIVE: "Active",
-      FILTER: "Filter",
-      BY_STATUS: "by Status",
-      BY_TYPE: "by Type",
-      BUSINESS: "Business",
-      INDIVIDUAL: "Individual",
-      SEARCH: "Search",
-      IN_ALL_FIELDS: "in all fields"
-    },
-    ECOMMERCE: "eCommerce",
-    CUSTOMERS: {
-      CUSTOMERS: "Customers",
-      CUSTOMERS_LIST: "Customers list",
-      NEW_CUSTOMER: "New Customer",
-      DELETE_CUSTOMER_SIMPLE: {
-        TITLE: "Customer Delete",
-        DESCRIPTION: "Are you sure to permanently delete this customer?",
-        WAIT_DESCRIPTION: "Customer is deleting...",
-        MESSAGE: "Customer has been deleted"
-      },
-      DELETE_CUSTOMER_MULTY: {
-        TITLE: "Customers Delete",
-        DESCRIPTION: "Are you sure to permanently delete selected customers?",
-        WAIT_DESCRIPTION: "Customers are deleting...",
-        MESSAGE: "Selected customers have been deleted"
-      },
-      UPDATE_STATUS: {
-        TITLE: "Status has been updated for selected customers",
-        MESSAGE: "Selected customers status have successfully been updated"
-      },
-      EDIT: {
-        UPDATE_MESSAGE: "Customer has been updated",
-        ADD_MESSAGE: "Customer has been created"
-      }
-    }
-  }
 };

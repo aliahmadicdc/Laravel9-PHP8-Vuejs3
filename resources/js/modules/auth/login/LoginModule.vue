@@ -1,29 +1,25 @@
 <template>
-    <Login/>
+    <Login v-if="!need2FA"/>
+
+    <TwoFactorAuthentication v-if="need2FA"/>
 </template>
 
 <script>
 import Login from "./components/Login"
-import {useStore} from "vuex"
-import {useI18n} from "vue-i18n"
-import {computed, provide} from "vue"
+import TwoFactorAuthentication from "./components/TwoFactorAuthentication";
+import {computed, inject} from "vue";
 
 export default {
     name: "LoginModule",
-    components: {Login},
+    components: {TwoFactorAuthentication, Login},
     setup() {
-        const {t, locale} = useI18n()
-        const store = useStore()
-        const lang = computed(() => store.state.all.lang)
+        const store = inject('store')
 
-        window.t = t
-        window.store = store
-        window.lang = lang
+        const need2FA = computed(() => store.state.login.needTwoFactorAuthentication)
 
-        provide('t', t)
-        provide('locale', locale)
-        provide('store', store)
-        provide('lang', lang)
+        return {
+            need2FA,
+        }
     }
 }
 </script>

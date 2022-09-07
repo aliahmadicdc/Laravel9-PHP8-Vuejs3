@@ -1,11 +1,12 @@
-import {SET_USER} from "../../../../core/store/all/mutation-types"
+import {SET_OPTIONS, SET_USER} from "../../../../core/store/all/mutation-types"
 import {SET_IS_READY} from "../store/mutation-types"
 
 async function userInfo() {
-    await ApiService.get('userInfo', (response) => {
+    await ApiService.get('profile/userInfo', (response) => {
         if (response.status === 200) {
-            window.store.commit(`all/${SET_USER}`, response.data.data)
-            window.store.commit(`dashboard/${SET_IS_READY}`, true)
+            StoreService.commit('all',SET_USER,response.data.data.user)
+            StoreService.commit('all',SET_OPTIONS,response.data.data.options)
+            StoreService.commit('dashboard',SET_IS_READY,true)
         } else
             MessageHandler.setMessage(null, true)
     }, (error) => {

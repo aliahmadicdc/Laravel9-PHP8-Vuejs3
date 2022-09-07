@@ -14,15 +14,14 @@ Since Laravel 9 was recently released, it supports PHP 8 and above. So I decided
 ## Design Features
 
 - Backend with laravel 9 (mvc) + multi-language.
-- Database with mysql contain users,notifications,jobs,roles,permissions,... tables.
+- Database with mysql contain email_verifies, images, jobs, languages, notifications, oauth, options, password_resets, permissions, permission_role, private_tokens, roles, role_user, sessions, timezones, two_factor_authentication, users, verify_codes tables.
 - Api backend with laravel 9 + passport (jwt).
-- Frontend with vue js 3(modular).
+- Frontend with vue js 3(modular) + vuex + vue router + i18n + vuelidate.
 
 ## Other Features
 
 - Laravel Auth Routes.
-- Design pages contain home,login,register,... with vue js multi-page application
-- Design panel with vue js single page application (spa)
+- Design pages with vue js single page application (spa)
 - Register with phone number and verify account with verification code.
 - Forgot password by registered phone number.
 - Login with phone number and password.
@@ -31,6 +30,9 @@ Since Laravel 9 was recently released, it supports PHP 8 and above. So I decided
 - Vue js (modular) contain api service,storage service,...
 - Vuex (modular) for store data
 - Vue-Router for frontend routing
+- Vuelidate for validation forms
+- Full profile page
+- Notifications page
 
 ## Contact
 

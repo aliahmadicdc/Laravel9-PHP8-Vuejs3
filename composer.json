@@ -12,13 +12,14 @@
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
+        "intervention/image": "^2.7",
         "jorenvanhocht/laravel-share": "^4.1",
         "laravel/framework": "^9.2",
         "laravel/passport": "^10.3",
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.4",
         "morilog/jalali": "3.*",
-        "trez/raygan-sms-notification-channel": "^2.0"
+        "tzsk/sms": "^6.0"
     },
     "require-dev": {
         "spatie/laravel-ignition": "^1.0",
@@ -35,10 +36,9 @@
             "Database\\Seeders\\": "database/seeders/"
         },
         "files": [
-            "app/Helpers/Const.php",
-            "app/Helpers/Functions.php",
-            "app/Helpers/Config.php",
-            "app/Helpers/Seo.php"
+            "app/Helpers/General/Const.php",
+            "app/Helpers/Functions/General.php",
+            "app/Helpers/General/Config.php"
         ]
     },
     "autoload-dev": {

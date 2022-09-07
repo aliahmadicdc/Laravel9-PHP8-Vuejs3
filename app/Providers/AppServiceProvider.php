@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use App\Models\back\SeoTag;
+use App\Models\Back\SeoTag;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;

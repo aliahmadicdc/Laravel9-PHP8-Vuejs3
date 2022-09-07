@@ -1,29 +1,39 @@
 <template>
-    <PasswordReset/>
+    <PasswordReset v-if="isReady"/>
 </template>
 
 <script>
 import PasswordReset from "./components/PasswordReset"
-import {useStore} from "vuex"
-import {useI18n} from "vue-i18n"
-import {computed, provide} from "vue"
+import passwordResetApi from "./api/passwordReset.api";
+import {computed, inject, onMounted, provide} from "vue"
 
 export default {
     name: "PasswordResetModule",
     components: {PasswordReset},
     setup() {
-        const {t, locale} = useI18n()
-        const store = useStore()
-        const lang = computed(() => store.state.all.lang)
+        const store = inject('store')
+        const isReady = computed(() => store.state.passwordReset.isReady);
 
-        window.t = t
-        window.store = store
-        window.lang = lang
+        const phoneNumber = route.params.phone_number;
+        const token = route.params.token
 
-        provide('t', t)
-        provide('locale', locale)
-        provide('store', store)
-        provide('lang', lang)
+        provide('phone_number', phoneNumber);
+        provide('token', token);
+
+        const getConfirm = () => {
+            passwordResetApi.confirm({
+                'phone_number': phoneNumber,
+                'token': token
+            })
+        }
+
+        onMounted(() => {
+            getConfirm();
+        })
+
+        return {
+            isReady,
+        }
     }
 }
 </script>

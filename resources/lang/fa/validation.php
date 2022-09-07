@@ -196,6 +196,16 @@ return [
         "code" => "کد تایید",
         "category_id" => "دسته بندی والد",
         "recaptcha" => "اثبات ربات نبودن",
+        "recaptchaResponse" => "اثبات ربات نبودن",
+        "old_password" => "رمز عبور قدیمی",
+        "new_password" => "رمز عبور جدید",
+        "email_notification" => "فیلد اعلان از طریق ایمیل",
+        "sms_notification" => "فیلد اعلان از طریق پیامک",
+        "message_notification" => "فیلد اعلان از طریق پیام",
+        "two_step_verification" => "فیلد تایید دو مرحله ای",
+        "" => "",
+        "" => "",
+        "" => "",
     ],
 
 ];

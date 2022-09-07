@@ -1,16 +1,19 @@
-import {IS_AUTH, USER_PHONE_NUMBER} from "../../../../core/services/session-types"
+import {IS_AUTH} from "../../../../core/services/data/storage-types"
+import {SET_IS_AUTH, SET_USER} from "../../../../core/store/all/mutation-types";
 
 async function register(data) {
     await ApiService.post('register', data, (response) => {
         if (response.status === 200) {
-            SessionService.save(IS_AUTH, true)
-            SessionService.save(USER_PHONE_NUMBER, data.phone_number)
-            window.location.href = '/panel/verify'
+            StoreService.commit('all', SET_USER, response.data.data)
+            StoreService.commit('all', SET_IS_AUTH, true)
+            StorageService.save(IS_AUTH, true)
+
+            router.push({name: 'verify'})
         } else
             MessageHandler.setMessage(null, true)
     }, (error) => {
         MessageHandler.parseError(error)
-    })
+    },true)
 }
 
 export default {register}
